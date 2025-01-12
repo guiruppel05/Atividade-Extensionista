@@ -16,6 +16,12 @@ header img {
     margin-top: 20px;
 }
 
+#logopequena {
+    margin: auto;
+    size: 50%;
+    max-width: 50%;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: bold;
