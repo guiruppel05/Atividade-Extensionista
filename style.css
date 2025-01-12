@@ -16,17 +16,6 @@ header img {
     margin-top: 20px;
 }
 
-#logo_grande {
-    max-width: 300px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#logo_pequena {
-    height:auto;
-    width: 5px;
-  }
-
 h1 {
     font-size: 1.5rem;
     font-weight: bold;
