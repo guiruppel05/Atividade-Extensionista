@@ -52,9 +52,17 @@ button {
     width: 90px;
 }
 
+.flex_center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
 #centralizar {
         max-width: 300px;
-        margin: 0 auto;
+        margin: auto;
 }
 
 #shorts {
