@@ -7,10 +7,10 @@ body {
     margin: 10%;
     padding: 0;
     height: 80vh;
-    background: linear-gradient(to right, #42B07E, #59D549);
+    background: linear-gradient(to right, #59D549, #42B07E);
 }
 header img {
-    max-width: 100px;
+    max-width: 300px;
     margin-bottom: 20px;
 }
 h1 {
