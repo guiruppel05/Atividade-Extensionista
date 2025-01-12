@@ -75,6 +75,21 @@ button {
     align-items: center;
 }
 
+.video-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.video-button img {
+    width: 50px; /* Ajuste o tamanho do ícone */
+    height: auto;
+    border: none;
+}
+
+.video-button img:hover {
+    opacity: 0.8; /* Efeito de hover para o ícone */
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
