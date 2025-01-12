@@ -37,17 +37,16 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 .btn-sim {
     background-color: blue;
     margin-right: 10px;
     display: inline-block;
-    align-items: center;
 }
 .btn-nao {
     background-color: red;
     display: inline-block;
-    align-items: center;
 }
 footer {
     text-align: center;
