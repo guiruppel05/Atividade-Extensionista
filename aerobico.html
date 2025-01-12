@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curitiba Treina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="flex_center">
+            <img id="logopequena" src="logo pequena.png" alt="Logo Curitiba Treina">
+        </div>
+
+        <p>Exercícios Aeróbicos</p>
+        
+        <div class="video-button">
+            <img src="MINIATURAS/Aquecimento - Simulador de Caminhada.png" alt="Ícone do vídeo" id="openModal">
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal" id="videoModal">
+            <div class="modal-content">
+                <button class="close-button" id="closeModal">&times;</button>
+                <video controls>
+                    <source src="https://www.youtube.com/watch?v=7OnDFBi9OT0" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+        </div>
+    
+        <script src="script2.js"></script>
+        Simulador de caminhada
+        <div id="flex_center">
+            <p>
+            <button class="btn-volte" onclick="window.location.href='selecao_exercicios.html'">Clique aqui para voltar</button>
+            </p>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        Desenvolvido por Guilherme Ruppel<br>
+        RU: 3936309
+    </footer>
+</body>
+</html>
