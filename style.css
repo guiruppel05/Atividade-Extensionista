@@ -1,91 +1,52 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #00c853, #009688);
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f9;
 }
-
-.container {
-    text-align: center;
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-    width: 70%;
+header img {
+    max-width: 100px;
     margin-bottom: 20px;
 }
-
-h2 {
-    font-size: 1.5em;
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1rem;
+    text-align: center;
     margin: 10px 0;
 }
-
-.gender-age {
-    display: flex;
-    justify-content: space-around;
+select, input[type="radio"], button {
     margin: 10px 0;
-}
-
-input[type="number"] {
-    width: 70px;
-    padding: 5px;
-    margin-left: 10px;
-}
-
-select, textarea, button {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
 button {
-    background: #00c853;
+    font-weight: bold;
     color: white;
-    cursor: pointer;
     border: none;
-    transition: background 0.3s;
+    cursor: pointer;
 }
-
-button:hover {
-    background: #009688;
+.btn-sim {
+    background-color: blue;
+    margin-right: 10px;
 }
-
-.notification {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
+.btn-nao {
+    background-color: red;
+}
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
     color: white;
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.success {
-    background-color: #4CAF50;
-}
-
-.error {
-    background-color: #FF6347;
-}
-
-@media (max-width: 400px) {
-    h2 {
-        font-size: 1.2em;
-    }
 }
