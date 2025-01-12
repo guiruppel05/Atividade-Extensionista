@@ -52,7 +52,7 @@ button {
     width: 90px;
 }
 
-.flex_center {
+#flex_center {
 
     display: flex;
     align-items: center;
