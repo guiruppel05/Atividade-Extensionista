@@ -94,6 +94,12 @@ button {
     width: 300px;
 }
 
+.btn-volte {
+    background-color: red;
+    margin: 10px;
+    width: 300px;
+}
+
 .btn-exercise {
     background-color: blue;
     margin: 10px;
