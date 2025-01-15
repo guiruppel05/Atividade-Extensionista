@@ -25,21 +25,34 @@
             </iframe>
         </div>
 
+        <div>
+            <h1>Deixe seu Feedback</h1>
+            <form id="feedbackForm">
+                <label for="name">Nome:</label>
+                <input placeholder="Nome Sobrenome" type="text" id="name" name="name" required>
+                <br>
+                <label for="phone">Telefone:</label>
+                <input placeholder="(DDD) _____-___" type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input placeholder="email@email.com.br" type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Mensagem:</label>
+                <textarea minlength="20" maxlength="50" placeholder="Digite seu feedback" id="message" name="message" required></textarea>
+                <div id="flex_center">
+                <button class="btn-exercise" type="submit">Enviar Feedback</button>
+                </div>
+            </form>
+            <p id="responseMessage"></p>
+        
+            <script src="scriptfeedback.js"></script>
+        </div>
+
         <div id="flex_center">
             <p>
-            <button class="btn-volte" onclick="window.location.href='alongamento.html'">Alongamento</button>
-            <br>
             <button class="btn-volte" onclick="window.location.href='finalizar.html'">Finalizar treino</button>        
         </p>
         </div>
     </main>
-
-    <div>
-        <p id="disclaimer">
-            A qualquer sinal de desconforto extremo, dor no peito, tremores e/ou formigamentos, procure um médico.
-A Prefeitura de Curitiba, os Desenvolvedores deste aplicativo e o Professor de Educação Física envolvido não se responsabilizam por quaisquer eventos adversos que possam vir a ocorrer da sua prática.Caso não se sinta confiante, procure um Professor de Educação Física para te ajudar presencialmente!
-No geral, tenha bom senso, tome cuidado e acima de tudo se divirta!
-        </p>
-    </div>
 </body>
 </html>
