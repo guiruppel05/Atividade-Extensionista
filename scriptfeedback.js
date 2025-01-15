@@ -13,7 +13,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function (eve
         message,
     };
 
-    const scriptURL = 'AKfycbw34iFzG4VEaUt_VjQylMeBtXlGNxOqMm8eDEhL4bckLRT27Ehj0h9uYdmrc0WdUWx3'; // Substitua pela URL do seu script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw34iFzG4VEaUt_VjQylMeBtXlGNxOqMm8eDEhL4bckLRT27Ehj0h9uYdmrc0WdUWx3/exec'; // Substitua pela URL do seu script
     const responseMessage = document.getElementById("responseMessage");
 
     fetch(scriptURL, {
