@@ -24,10 +24,28 @@
                 allowfullscreen>
             </iframe>
         </div>
-
         <div>
-            <!-- <h1>Deixe seu Feedback</h1> -->
-            <iframe class="airtable-embed" src="https://airtable.com/embed/appZGkNEJHaGPBMpG/pagXyJsrpTCYoLMWQ/form" frameborder="0" onmousewheel="" width="90%" height="350" style="background: transparent; border:solid 5px  #000000;"></iframe>
+            <h1>Deixe seu Feedback</h1>
+            <form id="feedbackForm" action="https://guiruppel05.pythonanywhere.com/submit" method="POST" accept-charset="UTF-8">
+                    
+                <label for="name">Nome:</label>
+                <input placeholder="Nome Sobrenome" type="text" id="name" name="name" required>
+                <br>
+                <label for="phone">Telefone:</label>
+                <input placeholder="(DDD) _____-___" type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input placeholder="email@email.com.br" type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Mensagem:</label>
+                <textarea minlength="20" maxlength="50" placeholder="Digite seu feedback" id="message" name="message" required></textarea>
+                <div id="flex_center">
+                <button class="btn-exercise" type="submit">Enviar Feedback</button>
+                </div>
+                <p id="responseMessage"></p>
+        
+                
+            </form>
         </div>
         <!--<script src="scriptfeedback.js"></script> --> 
 
