@@ -6,7 +6,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function (e) 
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    const scriptURL = 'https://guiruppel05.pythonanywhere.com/submit';
+    const scriptURL = 'https://guiruppel05.pythonanywhere.com/submit_feedback';
     const responseMessage = document.getElementById('responseMessage');
 
     fetch(scriptURL, {
