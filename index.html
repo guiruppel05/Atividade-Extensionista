@@ -27,7 +27,23 @@
         <p>Além disso, poderia contar pra gente também qual seu sexo e sua idade?</p>
         
         <div id="flex_center">
-            <select name="sexo" id="sexo">
+            <form id="form-feedback">
+                
+                <select name="sexo" id="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+                <select name="idade" id="idade">
+                    <!-- Idades geradas via JavaScript -->
+                    <script>
+                        for (let i = 12; i <= 100; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+                <button class= "btn-sim" type="submit">Enviar</button>
+            </form>
+            <!-- <select name="sexo" id="sexo">
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>
               </select>
@@ -39,7 +55,7 @@
                     }
                 </script>
             </select>
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button> -->
         </div>
 
         <p>É sua primeira vez aqui?</p>
