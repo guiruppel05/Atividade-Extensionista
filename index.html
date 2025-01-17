@@ -47,9 +47,30 @@
         Desenvolvido por Guilherme Ruppel<br>
         RU: 3936309
     </footer>
-    <script>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>
+                Aviso!<br>Esta página foi desenvolvida como parte do requisito para obtenção de nota na disciplina de Atividade Extensionista III, do curso de Bacharelado em Engenharia de Software do Centro Universitário Internacional UNINTER. O trabalho foi realizado integralmente pelo aluno Guilherme Ruppel, RU 3930639, e poderá, ou não, receber futuras atualizações!
+            </p>
+            <button id="closePopup" class="popup-button">Entendi</button>
+        </div>
+    </div>
+    
+
+    <!-- <script>
         window.onload = function() {
             alert("Esta página foi desenvolvida como parte do requisito para obtenção de nota na disciplina de Atividade Extensionista III, do curso de Bacharelado em Engenharia de Software do Centro Universitário Internacional UNINTER. O trabalho foi realizado integralmente pelo aluno Guilherme Ruppel, RU 3930639, e poderá, ou não, receber futuras atualizações!");
+        };
+    </script> -->
+    <script>
+        window.onload = function() {
+            const popup = document.getElementById("popup");
+            const closeButton = document.getElementById("closePopup");
+    
+            closeButton.addEventListener("click", function() {
+                popup.style.display = "none";
+            });
         };
     </script>
     
