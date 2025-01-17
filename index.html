@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curitiba Treina</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,35 +26,14 @@
         <p>Além disso, poderia contar pra gente também qual seu sexo e sua idade?</p>
         
         <div id="flex_center">
-            <form id="form-feedback">
-                
-                <select name="sexo" id="sexo">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
-                </select>
-                <select name="idade" id="idade">
-                    <!-- Idades geradas via JavaScript -->
-                    <script>
-                        for (let i = 12; i <= 100; i++) {
-                            document.write(`<option value="${i}">${i}</option>`);
-                        }
-                    </script>
-                </select>
-                <button class= "btn-sim" type="submit">Enviar</button>
-            </form>
-            <!-- <select name="sexo" id="sexo">
+            <select name="sexo" id="sexo">
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>
               </select>
            
             <select name="idade" id="idade">
-                <script>
-                    for (let i = 12; i <= 100; i++) {
-                        document.write(`<option value="${i}">${i}</option>`);
-                    }
-                </script>
+                <script src="script.js"></script>
             </select>
-            <button type="submit">Enviar</button> -->
         </div>
 
         <p>É sua primeira vez aqui?</p>
@@ -78,13 +56,7 @@
             <button id="closePopup" class="popup-button">Entendi</button>
         </div>
     </div>
-    
 
-    <!-- <script>
-        window.onload = function() {
-            alert("Esta página foi desenvolvida como parte do requisito para obtenção de nota na disciplina de Atividade Extensionista III, do curso de Bacharelado em Engenharia de Software do Centro Universitário Internacional UNINTER. O trabalho foi realizado integralmente pelo aluno Guilherme Ruppel, RU 3930639, e poderá, ou não, receber futuras atualizações!");
-        };
-    </script> -->
     <script>
         window.onload = function() {
             const popup = document.getElementById("popup");
