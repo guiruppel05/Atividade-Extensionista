@@ -1,11 +1,14 @@
-// Preencher dropdown de idades
-const idadeSelect = document.getElementById("idade");
+// Seleciona o elemento do menu dropdown de idades
+const idadeDropdown = document.getElementById('idade');
+
+// Popula o menu dropdown com idades de 12 a 100
 for (let i = 12; i <= 100; i++) {
-    const option = document.createElement("option");
+    const option = document.createElement('option');
     option.value = i;
     option.textContent = i;
-    idadeSelect.appendChild(option);
+    idadeDropdown.appendChild(option);
 }
+
 
 // Adicionar evento de clique no botão
 document.getElementById("submitButton").addEventListener("click", () => {
