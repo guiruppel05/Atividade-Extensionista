@@ -1,35 +1,34 @@
-// Seleciona o elemento do menu dropdown de idades
-const idadeDropdown = document.getElementById('idade');
+const airtableAPIKey = "patQ4Go0PAWPefEa9.00ad4e4df32dfd47f281bd6278b8832ef0294de83a8dd22e4130a88bd3be86eb";
+const airtableBaseID = "appZGkNEJHaGPBMpG";
+const tableName = "Sexo-Idade"; // Substitua pelo nome da sua tabela no Airtable
 
-// Popula o menu dropdown com idades de 12 a 100
-for (let i = 12; i <= 100; i++) {
-    const option = document.createElement('option');
-    option.value = i;
-    option.textContent = i;
-    idadeDropdown.appendChild(option);
-}
+document.getElementById('flex_center').addEventListener('submit', function (e) {
+    e.preventDefault();
 
+    // Captura os valores dos campos
+    const sexo = document.getElementById('sexo').value;
+    const idade = document.getElementById('idade').value;
 
-// Adicionar evento de clique no botão
-document.getElementById("submitButton").addEventListener("click", () => {
-    const sexo = document.getElementById("sexo").value;
-    const idade = document.getElementById("idade").value;
-
-    // Enviar os dados para o backend
-    fetch("https://guiruppel05.pythonanywhere.com/save_data", {
-        method: "POST",
+    // Enviar os dados para o Airtable
+    fetch(`https://api.airtable.com/v0/${airtableBaseID}/${tableName}`, {
+        method: 'POST',
         headers: {
-            "Content-Type": "application/json",
+            Authorization: `Bearer ${airtableAPIKey}`,
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ sexo, idade }),
+        body: JSON.stringify({
+            fields: {
+                Sexo: sexo,
+                Idade: parseInt(idade, 10)
+            }
+        })
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Dados enviados:", data);
-        alert("Dados enviados com sucesso!");
-    })
-    .catch(error => {
-        console.error("Erro ao enviar dados:", error);
-        alert("Erro ao enviar dados.");
-    });
+        .then(response => {
+            if (response.ok) {
+                alert('Dados enviados com sucesso!');
+            } else {
+                console.error('Erro ao enviar dados:', response.statusText);
+            }
+        })
+        .catch(error => console.error('Erro:', error));
 });

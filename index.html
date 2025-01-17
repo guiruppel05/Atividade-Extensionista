@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curitiba Treina</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,26 +26,19 @@
 
         <p>Além disso, poderia contar pra gente também qual seu sexo e sua idade?</p>
         
-        <!-- <div id="flex_center">
+        <div id="flex_center">
             <select name="sexo" id="sexo">
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>
               </select>
            
             <select name="idade" id="idade">
-                <script src="script.js"></script>
+                <script>
+                    for (let i = 12; i <= 100; i++) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
             </select>
-        </div> -->
-
-        <div id="flex_center">
-            <select name="sexo" id="sexo">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-            </select>
-            <select name="idade" id="idade">
-                <script src="script.js"></script>
-            </select>
-            <button class="btn-sim" id="submitButton">Enviar Dados</button>
         </div>
 
         <p>É sua primeira vez aqui?</p>
